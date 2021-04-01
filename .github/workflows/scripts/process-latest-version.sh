@@ -10,11 +10,11 @@ pod spec which Firebase
 
 # Uncomment for testing purposes:
 #GITHUB_TOKEN=your-token-here
-#GITHUB_REPOSITORY=invertase/firestore-ios-sdk-frameworks
+GITHUB_REPOSITORY=upserve/firestore-ios-sdk-frameworks
 
 FIREBASE_GITHUB_REPOSITORY=firebase/firebase-ios-sdk
-LATEST_FIREBASE_PODSPEC=$(pod spec which Firebase)
-LATEST_FIREBASE_VERSION=$(python -c 'import json,sys; print(json.loads(sys.stdin.read())["version"])' <"$LATEST_FIREBASE_PODSPEC")
+LATEST_FIREBASE_PODSPEC=/Users/nateoliveira/.cocoapods/repos/cocoapods/Specs/0/3/5/Firebase/7.4.0/Firebase.podspec.json
+LATEST_FIREBASE_VERSION=7.4.0
 echo "LATEST_FIREBASE_VERSION=$LATEST_FIREBASE_VERSION" >> "$GITHUB_ENV"
 
 # -------------------
