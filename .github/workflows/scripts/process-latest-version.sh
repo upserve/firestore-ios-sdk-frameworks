@@ -13,8 +13,8 @@ pod spec which Firebase
 GITHUB_REPOSITORY=upserve/firestore-ios-sdk-frameworks
 
 FIREBASE_GITHUB_REPOSITORY=firebase/firebase-ios-sdk
-LATEST_FIREBASE_PODSPEC=/Users/nateoliveira/.cocoapods/repos/cocoapods/Specs/0/3/5/Firebase/7.4.0/Firebase.podspec.json
-LATEST_FIREBASE_VERSION=7.4.0
+LATEST_FIREBASE_PODSPEC=$(pod spec which Firebase)
+LATEST_FIREBASE_VERSION=$(python -c 'import json,sys; print(json.loads(sys.stdin.read())["version"])' <"$LATEST_FIREBASE_PODSPEC")
 
 # -------------------
 #      Functions
