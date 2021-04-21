@@ -12,7 +12,7 @@ Currently the Firestore iOS SDK depends on some 500k lines of mostly C++, which 
   - [#4284](https://github.com/firebase/firebase-ios-sdk/issues/4284) `Adding FirebaseFirestore pod dependency adds minutes to build time`
 - [FirebaseExtended/flutterfire](https://github.com/FirebaseExtended/flutterfire)
   - [#349](https://github.com/FirebaseExtended/flutterfire/issues/349) `[cloud_firestore] Xcode build extremely slow`
-  
+
 #### Before & After
 
 Before and after timing below, timed when running Xcode build (with cache fully cleared) in a project with Firestore.
@@ -48,7 +48,7 @@ pod 'FirebaseFirestore', :git => 'https://github.com/invertase/firestore-ios-sdk
 
 The first time you `pod install` a specific version, CocoaPods will remotely retrieve this git repository at the specifed tag and cache it locally for use as a source for the `FirebaseFirestore` pod.
 
-> **⚠️ Note:** if you were previously caching iOS builds on CI you may now find that when using precompiled binaries that caching is no longer required and it may actually slow down your build times by several minutes. 
+> **⚠️ Note:** if you were previously caching iOS builds on CI you may now find that when using precompiled binaries that caching is no longer required and it may actually slow down your build times by several minutes.
 
 ### Supported Firebase iOS SDK versions
 
@@ -57,9 +57,8 @@ The below are the currently supported Firebase iOS SDK versions of this reposito
 > **⚠️ Note:** if you are looking for a new version that is not listed in the supported versions list, examine the upstream release notes for firebase-ios-sdk carefully. This can happen if the firebase-ios-sdk team issues an interim release to solve some urgent problem, but do not run their full release process. If that happens, don't worry - just wait for the next supported version before moving forward, or temporarily de-integrate this pre-compiled framework if you must use the interim version. 6.31.1 is an example of this, with more details [here](https://github.com/firebase/firebase-ios-sdk/pull/6368#issuecomment-685030446) for why it might happen.
 
 <!--NEW_VERSION_PLACEHOLDER-->
- - [7.4.0](https://github.com/invertase/firestore-ios-sdk-frameworks/releases/tag/7.4.0)
- - [7.4.0](https://github.com/invertase/firestore-ios-sdk-frameworks/releases/tag/7.4.0)
- - [7.4.0](https://github.com/invertase/firestore-ios-sdk-frameworks/releases/tag/7.4.0)
+ - [7.11.0](https://github.com/invertase/firestore-ios-sdk-frameworks/releases/tag/7.11.0)
+ - [7.10.0](https://github.com/invertase/firestore-ios-sdk-frameworks/releases/tag/7.10.0)
  - [7.9.0](https://github.com/invertase/firestore-ios-sdk-frameworks/releases/tag/7.9.0)
  - [7.8.1](https://github.com/invertase/firestore-ios-sdk-frameworks/releases/tag/7.8.1)
  - [7.8.0](https://github.com/invertase/firestore-ios-sdk-frameworks/releases/tag/7.8.0)
